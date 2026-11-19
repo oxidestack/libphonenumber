@@ -1,0 +1,5 @@
+# Verbatim third-party files, which cannot be scrubbed: tools/public/public_check.py skips the built-in local-path and
+# internal-host patterns and the worklog rule for them. The denylist still applies. One `<glob>  # <reason>` per line;
+# `**` any path, `*` within a directory, a leading `!` takes a path back out (the last matching line wins).
+upstream/**  # libphonenumber's pinned sources (a submodule), never edited
+resources/**  # libphonenumber's metadata, copied verbatim (tests/resources.rs checks it)

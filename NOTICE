@@ -1,0 +1,18 @@
+libphonenumber (this crate)
+Copyright the libphonenumber contributors; licensed under Apache-2.0 (LICENSE).
+
+This crate is an unofficial Rust port of libphonenumber 9.0.41 (https://github.com/google/libphonenumber), Copyright
+the libphonenumber authors (Google LLC), licensed under Apache-2.0. It is not affiliated with or endorsed by Google.
+
+Carried from libphonenumber 9.0.41, unmodified and under its licence:
+- the metadata files in resources/ (the runtime PhoneNumberMetadataProto_* files, the testing metadata, and the
+  CountryCodeToRegionCodeMap files), copied verbatim by scripts/sync-metadata.sh. The metadata version is 9.0.41;
+- upstream/libphonenumber, a git submodule pinned to the v9.0.41 tag, read-only, not part of the published package.
+
+Ported behaviour, and the tests and inputs taken from libphonenumber's own test suite (tests/upstream_*.rs), remain
+under libphonenumber's Apache-2.0 licence. The differential vectors in tests/vectors/ were recorded by running
+libphonenumber 9.0.41 (scripts/record.sh).
+
+Nothing was copied from libphonenumber's files under LICENSE.Chromium, so that licence is not carried here.
+
+Documentation prose in this repository is licensed CC-BY-4.0 (LICENSE-docs).

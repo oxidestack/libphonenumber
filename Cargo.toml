@@ -1,0 +1,26 @@
+[package]
+name = "libphonenumber"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Unofficial Rust port of the parts of Google's libphonenumber 9.0.41 (Java) that Datafaker reaches: region metadata, parse, validation, number types and formatting, with libphonenumber's own results. Not affiliated with Google."
+repository = "https://github.com/oxidestack/libphonenumber"
+homepage = "https://oxidestack.github.io/libphonenumber/"
+documentation = "https://docs.rs/libphonenumber"
+readme = "README.md"
+keywords = ["phone", "phonenumber", "libphonenumber", "e164", "validation"]
+categories = ["parser-implementations", "internationalization"]
+# What crates.io gets: the library, its licence and notice, the README and the changelog. The pinned
+# upstream sources, the tests and their recorded vectors, the tools, the docs and the site stay in the
+# repository.
+include = ["/src/**", "/LICENSE", "/NOTICE", "/README.md", "/CHANGELOG.md", "/build.rs", "/resources/**"]
+rust-version = "1.85"
+
+[package.metadata.port]
+upstream = "libphonenumber"
+upstream-version = "9.0.41"
+metadata-version = "9.0.41"
+
+[dependencies]
+regex = "1"
+unicode-general-category = "1.1.0"

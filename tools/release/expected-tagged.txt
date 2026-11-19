@@ -1,0 +1,25 @@
+## [0.2.0] - YYYY-MM-DD
+
+### Action required
+
+- `strict_mode` is no longer read. A configuration that sets it sets `strict` to the same value instead. (cbb7e69)
+
+### Features
+
+- The `trim` option drops trailing whitespace from the output. (phonenumber, 25469e4)
+
+### Bug fixes
+
+- An error raised in a nested call names the position of the call, so a caller finds it. (31d6346)
+- Input that is not UTF-8 returns an error instead of a panic. (e5cc085)
+- An error names the line of the input, as the Java library does. (b9be438)
+
+### Performance
+
+- An input used twice is parsed once, so using it again is faster. (31072cc)
+
+### Other changes
+
+- The README lists every option with its default. (95e5a62)
+
+[0.2.0]: https://github.com/oxidestack/libphonenumber/compare/v0.1.0...v0.2.0
